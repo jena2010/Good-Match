@@ -38,7 +38,7 @@ def calcPercentage(arr):
         return calcPercentage(temp)
   
 
-
+#Modify the program to accept as a CSV file input
 def matchPercentage(name1, name2) :
     string = name1+" matches "+name2
     match = []
