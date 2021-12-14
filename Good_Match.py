@@ -37,7 +37,18 @@ def calcPercentage(arr):
     else:
         return calcPercentage(temp)
   
+def MatchResult():
+    try:
+        n1 = input(str("Enter 1st name"))
+        n2 = input(str("Enter 2nd name"))
+        InputMatch = matchPercentage(n1,n2)
+        print(InputMatch)   
+    except Exception as e:
+        print("Invalid Input!! Please Enter only alphabetic characters",e)
 
+    return InputMatch
+    
+MatchResult()
 #Modify the program to accept as a CSV file input
 def matchPercentage(name1, name2) :
     string = name1+" matches "+name2
